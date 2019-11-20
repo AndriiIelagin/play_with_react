@@ -1,23 +1,18 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
-import ClickCounterTwo from './components/ClickCounterTwo';
-import HoverCounterTwo from './components/HoverCounterTwo';
-import User from './components/User';
-import Counter from './components/Counter';
+import MemoComp from './components/MemoComp';
 
 function App() {
+  const [name, setName] = useState('Haider');
+  useEffect(() => {
+    setInterval(() => {
+      setName('Haider');
+    }, 2000);
+  });
+  console.log('render App')
   return (
     <div className="App">
-      <Counter>
-        {(count, incrementCount) => (
-          <ClickCounterTwo count={count} incrementCount={incrementCount} />
-        )}
-      </Counter>
-      <Counter>
-        {(count, incrementCount) => (
-          <HoverCounterTwo count={count} incrementCount={incrementCount} />
-        )}
-      </Counter>
+      <MemoComp name={name} />
     </div>
   );
 }
