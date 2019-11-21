@@ -1,20 +1,14 @@
 import React from 'react';
 import './App.css';
-import Hero from './components/Hero';
-import ErrorBoundary from './components/ErrorBoundary';
+import ContextA from './components/ContextA';
+import { UserProvider } from './contexts/userContext';
 
 function App() {
   return (
     <div className="App">
-      <ErrorBoundary>
-        <Hero name="Batman" />
-      </ErrorBoundary>
-      <ErrorBoundary>
-        <Hero name="Superman" />
-      </ErrorBoundary>
-      <ErrorBoundary>
-        <Hero name="Joker" />
-      </ErrorBoundary>
+      <UserProvider value='Haider'>
+        <ContextA />
+      </UserProvider>
     </div>
   );
 }
