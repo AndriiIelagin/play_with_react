@@ -1,18 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './App.css';
-import MemoComp from './components/MemoComp';
+import FRParentInput from './components/FRParentInput';
 
 function App() {
-  const [name, setName] = useState('Haider');
-  useEffect(() => {
-    setInterval(() => {
-      setName('Haider');
-    }, 2000);
-  });
-  console.log('render App')
   return (
     <div className="App">
-      <MemoComp name={name} />
+      <FRParentInput />
     </div>
   );
 }
