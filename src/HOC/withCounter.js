@@ -23,7 +23,7 @@ function withCounter(WrappedComponent, incrementNumber) {
 
   const WithCounter = (props) => {
     const [count, setCount] = useState(0)
-    return <WrappedComponent count={count} incrementCount={() => setCount(count + incrementNumber)} {...props} />
+    return <WrappedComponent count={count} incrementCount={() => setCount(prevCount => prevCount + incrementNumber)} {...props} />
   }
   return WithCounter;
 }
