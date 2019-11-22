@@ -1,14 +1,11 @@
 import React from 'react';
 import './App.css';
-import ContextA from './components/ContextA';
-import { UserProvider } from './contexts/userContext';
+import HookMouse from './components/HookMouse';
 
 function App() {
   return (
     <div className="App">
-      <UserProvider value='Haider'>
-        <ContextA />
-      </UserProvider>
+      <HookMouse />
     </div>
   );
 }
