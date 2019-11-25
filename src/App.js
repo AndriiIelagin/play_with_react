@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import ComplexReducerCounter from './components/ComplexReducerCounter';
+import MultipleReducerCounter from './components/MultipleReducerCounter';
 
 function App() {
   return (
     <div className="App">
-      <ComplexReducerCounter />
+      <MultipleReducerCounter />
     </div>
   );
 }
