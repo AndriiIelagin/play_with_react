@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import DataFetching from './components/DataFetching';
+import ReducerCounter from './components/ReducerCounter';
 
 function App() {
   return (
     <div className="App">
-      <DataFetching />
+      <ReducerCounter />
     </div>
   );
 }

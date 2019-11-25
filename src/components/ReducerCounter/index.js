@@ -20,9 +20,10 @@ function ReducerCounter() {
 
   return (
     <div>
-      <button>Increment</button>
-      <button>Decrement</button>
-      <button>Reset</button>
+      <div>Count - {count}</div>
+      <button onClick={() => dispatch('increment')}>Increment</button>
+      <button onClick={() => dispatch('decrement')}>Decrement</button>
+      <button onClick={() => dispatch('reset')}>Reset</button>
     </div>
   )
 }
