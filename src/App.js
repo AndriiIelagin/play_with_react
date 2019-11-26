@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import DocTitleOne from './components/DocTitleOne';
+import CounterWithCustomHook from './components/CounterWithCustomHook';
 
 function App() {
   return (
     <div className="App">
-      <DocTitleOne />
+      <CounterWithCustomHook />
     </div>
   );
 }
