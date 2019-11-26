@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import UseMemoDemo from './components/UseMemoDemo';
+import HookTimer from './components/HookTimer';
 
 function App() {
   return (
     <div className="App">
-      <UseMemoDemo />
+      <HookTimer />
     </div>
   );
 }
